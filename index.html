@@ -12,43 +12,21 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
-  
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+-->
     <style>
-        
-html,
-body {
-    background-image: url(img.jpg);
-    height: 100%;
-}
-
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-/* Background images are set within the HTML using inline CSS, not here */
-
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-footer {
-    margin: 50px 0;
-}
-      @media (min-width: 970px) {
+      html,
+        body {
+            background-image: url(img.jpg);
+            height: 100%;
+        padding-top: 10px;
+    
+      }
+      @media (min-width: 992px) {
         body {
           padding-top: 0px;
         }
@@ -62,13 +40,42 @@ footer {
         p{
             line-height:25px;
         }
-
         /*
  * Start Bootstrap - Full Slider (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-
+        .bg{
+            
+        
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+footer {
+    margin: 50px 0;
+}
         .smoothies {
             
             background-color: chocolate;
@@ -84,41 +91,40 @@ footer {
 
 
     <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li ><a id="home" class="section" href="#carousel"> <b>My Favorite Recipes</b><span class="sr-only">(current)</span></a></li>
-          <li><a id="home" class="section" href="#carousel"><b>Home</b></a></li>
-          <li><a id="smoothies" class="section" href="#smoothy"><b>Smoothies</b></a></li>
-
-          <li><a href="#tiramisu"><b>Tiramisu</b></a></li>
-          <li><a href="#chocolate-cake"><b>Chocolate-Cake</b></a></li>
-        
-      </ul>
-      
-      
-      <ul class="nav navbar-nav navbar-right" style="margin-right:55px;margin-left: 20px;">
+    <nav class="navbar navbar-expand-lg navbar-red bg-light fixed-top" style="margin-bottom: 0px;margin-top: 0px;" >
+      <div class="container">
+        <a class="navbar-brand" href="#">My Recipices</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#smoothy">Smoothies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tiramisu">Tiramisu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chocolate-cake">Chocolate-Cake</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <ul class="nav navbar-nav navbar-right" style="margin-left: 30px;">
          <li style="margin-right: 10px;margin-left: 7px;"> <button class="btn btn-primary navbar-btn">Login</button></li>
-          <li style="margin-left: 1px;">  <button class="btn btn-primary navbar-btn">Sign-up</button></li>
+          <li style="margin-right: 20px;">  <button class="btn btn-primary navbar-btn">Sign-up</button></li>
         
       
       
       </ul>
-    </div>
-  </div>
-</nav>
 
+    </nav>
       <!-- Full Page Image Background Carousel Header -->
        <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -161,7 +167,7 @@ footer {
                         
  <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('14.jpg')"></div>
+                <div class="fill" style="background-image:url('14.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>Always Be Happy!</h2>
                 </div>
@@ -179,13 +185,12 @@ footer {
     </header>
 
     <!-- Page Content -->
-      <div class="container-fluid" style="margin: 20px 15px 20px 1px;">
+      <div class="container-fluid" style="margin: 10px 15px 20px 10px;">
        <div class="row">
            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" id="col1">
                <b>
-                   <p >Every dish deserves as much love as your main course, so take a look at our lovely suggestions and make every mouthful magical.It’s always hard to pick favorites, but I love going back through a year of recipes and remembering all of the amazingness that came out.From my Smoothies and best-ever Tiramisu, to my Chocolate-Cake – there is SO much goodness in here that I’ve made again and again.</p></b>
-               </div>
-          </div>    
+               <p style="margin-bottom: -5px;">Every dish deserves as much love as your main course, so take a look at our lovely suggestions and make every mouthful magical.Every dish deserves as much love as your main course, so take a look at our lovely suggestions and make every mouthful magical.It’s always hard to pick favorites, but I love going back through a year of recipes and remembering all of the amazingness that came out.From my Smoothies and best-ever Tiramisu, to my Chocolate-Cake – there is SO much goodness in here that I’ve made again and again.</p>
+               </b>
       </div>
     <div class="container-fluid" id="smoothy" style="margin-top: 20px;">
       <div class="row">
@@ -494,9 +499,8 @@ footer {
           <h3 style="font-display: swap; font-style:italic;font-weight: 700;">Hope you enjoyed it. You must try this next time with your family if you find this really tasty. So keep smiling and live healthy!! </h3>
         
           </div>
-                    
-
-       
+           </div>
+           </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -507,6 +511,8 @@ footer {
         interval: 2500 //changes the speed
     })
     </script>
+           </div>
+      
   </body>
 
 </html>
